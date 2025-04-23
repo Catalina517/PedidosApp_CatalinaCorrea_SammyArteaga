@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntregaDron.cs" />
+    <Compile Include="EntregaFactory.cs" />
     <Compile Include="EntregarCamion.cs" />
     <Compile Include="EntregarMoto.cs" />
     <Compile Include="Form1.cs">
