@@ -78,7 +78,7 @@
             // nudPeso
             // 
             this.nudPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPeso.Location = new System.Drawing.Point(578, 59);
+            this.nudPeso.Location = new System.Drawing.Point(629, 61);
             this.nudPeso.Name = "nudPeso";
             this.nudPeso.Size = new System.Drawing.Size(120, 27);
             this.nudPeso.TabIndex = 3;
@@ -86,7 +86,7 @@
             // nudDistancia
             // 
             this.nudDistancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudDistancia.Location = new System.Drawing.Point(578, 114);
+            this.nudDistancia.Location = new System.Drawing.Point(629, 112);
             this.nudDistancia.Name = "nudDistancia";
             this.nudDistancia.Size = new System.Drawing.Size(120, 27);
             this.nudDistancia.TabIndex = 4;
@@ -109,6 +109,7 @@
             this.btnCalcular.TabIndex = 7;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // label1
             // 
