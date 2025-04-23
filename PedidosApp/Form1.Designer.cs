@@ -56,9 +56,9 @@
             this.cmbProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProducto.FormattingEnabled = true;
             this.cmbProducto.Items.AddRange(new object[] {
-            "Tecnología",
-            "Accesorio",
-            "Componente"});
+            "tecnología",
+            "accesorio",
+            "componente"});
             this.cmbProducto.Location = new System.Drawing.Point(207, 108);
             this.cmbProducto.Name = "cmbProducto";
             this.cmbProducto.Size = new System.Drawing.Size(141, 28);
