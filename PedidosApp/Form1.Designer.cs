@@ -162,6 +162,7 @@
             this.btnMostrarPedidos.TabIndex = 12;
             this.btnMostrarPedidos.Text = "MOSTRAR PEDIDOS";
             this.btnMostrarPedidos.UseVisualStyleBackColor = true;
+            this.btnMostrarPedidos.Click += new System.EventHandler(this.btnMostrarPedidos_Click);
             // 
             // Form1
             // 
