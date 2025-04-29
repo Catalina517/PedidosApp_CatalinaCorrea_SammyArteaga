@@ -34,25 +34,59 @@ Patrones de diseño utilizados
 Reglas de negocio implementadas
 
 Regla 1: Reglas generales de transporte
-      a. Si el producto es "tecnología" y es urgente => Dron
-      b. Si el producto es "accesorio" => Motocicleta
-      c. Si el producto es "componente" o si el peso supera los 10kg => Camión
-      
+      - Si el producto es "tecnología" y es urgente => Dron
+      - Si el producto es "accesorio" => Motocicleta
+      - Si el producto es "componente" o si el peso supera los 10kg => Camión
+
+Captura con producto de tecnología y urgente
+      ![tecnologia](https://github.com/user-attachments/assets/9afdacd9-2bd1-4113-9152-1dba919a1351)
+
+Captura con producto de tecnología, no urgente
+![tecnologia_nour](https://github.com/user-attachments/assets/7a391ecc-5108-41d5-b479-2028dbf67dc0)
+  
 Regla 2: Tarifas por tipo de entrega
-      a. Dron: 20 * km
-      b. Motocicleta: 10 * km
-      c. Camión: 5 * km
+      - Dron: 20 * km
+      - Motocicleta: 10 * km
+      - Camión: 5 * km
+
+Captura con producto de accesorio
+![accesorio](https://github.com/user-attachments/assets/cdde90fa-125c-4b15-8f1c-0cb057f23d19)
+
+Captura con producto de componente
+![camion](https://github.com/user-attachments/assets/212fb28e-389b-443f-a033-60f23897ee34)
       
-Regla 1: Agregar una nueva estrategia de entrega ecológica (Bicicleta)
+Regla 3: Agregar una nueva estrategia de entrega ecológica (Bicicleta)
       - Condición: producto tipo accesorio, peso < 2 kg y no urgente
       - Costo: 3 * 
+
+Captura nueva entrega en Bicicleta
+![Bicicleta](https://github.com/user-attachments/assets/26eaa545-86d4-442d-ad8c-5fad7102c35d)
+
       
-Regla 2: Mostrar el historial de pedidos
+Regla 4: Mostrar el historial de pedidos
       - Formulario con un DataGridView que presenta los pedidos almacenados en RegistroPedidos.
+
+Se accede al historial desde el botón "Mostrar pedidos"
+![Captura de pantalla 2025-04-29 172143](https://github.com/user-attachments/assets/181c6b6c-2124-4c7c-a6ef-0e568c1c571f)
+
       
-Regla 3: Filtrar el historial por tipo de entrega
+Regla 5: Filtrar el historial por tipo de entrega
       - Se implementa un ComboBox en el formulario de historial para seleccionar entre los distintos tipos de entrega.
 
+Se filtra por "Todos"
+![buscarTodos](https://github.com/user-attachments/assets/0a0228b0-2b52-411c-963a-8a0717575887)
+
+Se filtra por "Dron"
+![buscarDron](https://github.com/user-attachments/assets/9e6424a0-2b92-4009-9168-aa698eeacf5e)
+
+Se filtra por "Motocicleta"
+![buscarMotocicleta](https://github.com/user-attachments/assets/914ba5ec-5253-4057-912e-42c6a87d6cf1)
+
+Se filtra por "Camión"
+![buscarCamion](https://github.com/user-attachments/assets/a97614dd-c550-40a7-b109-0066410c5665)
+
+Se filtra por "Bicicleta"
+![buscarBicicleta](https://github.com/user-attachments/assets/bb472a73-93de-4f5c-9f4e-73823b683d08)
 
 
 Preguntas de comprensión
