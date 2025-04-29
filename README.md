@@ -1,4 +1,4 @@
-PedidosApp_CatalinaCorrea
+PedidosApp_CatalinaCorrea_SammyArteaga
 
 Descripción
 Este proyecto es una aplicación de escritorio creada con Windows Forms en C# que permite calcular el método de entrega y el costo del envío de un pedido para la tienda virtual TechExpress, aplicando patrones de diseño como Strategy, Factory Method y Singleton.
@@ -15,15 +15,44 @@ Funcionamiento general
    - Dron si es tecnología y urgente
    - Motocicleta si es accesorio o por defecto
    - Camión si es componente o el peso supera los 10 kg
+   - Bicicleta si es accesorio, peso < 2 kg y no urgente (estrategia ecológica)
 
 3. Se calcula el costo de envío en función de la distancia y el transporte.
 
 4. Se guarda el pedido usando una instancia Singleton ('RegistroPedidos'), que mantiene una lista global de todos los pedidos registrados.
 
+5. El usuario puede ver el historial de pedidos en un formulario secundario llamado 'Historial'. Este formulario contiene:
+      - Un DataGridView que muestra los pedidos guardados.
+      - Un ComboBox para filtrar los pedidos por tipo de entrega (Dron, Motocicleta, Camión, Bicicleta o Todos).
+
+   
 Patrones de diseño utilizados
 - Strategy: Permite intercambiar el método de entrega sin modificar la clase 'Pedido'.
 - Factory Method: Se usa en 'EntregaFactory' para encapsular la lógica de selección del transporte.
 - Singleton: Se usa en 'RegistroPedidos' para asegurar que solo exista una instancia que almacene todos los pedidos.
+
+Reglas de negocio implementadas
+
+Regla 1: Reglas generales de transporte
+      a. Si el producto es "tecnología" y es urgente => Dron
+      b. Si el producto es "accesorio" => Motocicleta
+      c. Si el producto es "componente" o si el peso supera los 10kg => Camión
+      
+Regla 2: Tarifas por tipo de entrega
+      a. Dron: 20 * km
+      b. Motocicleta: 10 * km
+      c. Camión: 5 * km
+      
+Regla 1: Agregar una nueva estrategia de entrega ecológica (Bicicleta)
+      - Condición: producto tipo accesorio, peso < 2 kg y no urgente
+      - Costo: 3 * 
+      
+Regla 2: Mostrar el historial de pedidos
+      - Formulario con un DataGridView que presenta los pedidos almacenados en RegistroPedidos.
+      
+Regla 3: Filtrar el historial por tipo de entrega
+      - Se implementa un ComboBox en el formulario de historial para seleccionar entre los distintos tipos de entrega.
+
 
 
 Preguntas de comprensión
