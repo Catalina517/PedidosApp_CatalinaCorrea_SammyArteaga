@@ -14,7 +14,10 @@ namespace PedidosApp
             {
                 return new EntregaDron();
             }
-
+            else if (tipoProducto == "accesorio" && peso < 2 && !urgente)
+            {
+                return new EntregaBicicleta();
+            }
             else if (tipoProducto == "accesorio")
             {
                 return new EntregarMoto();

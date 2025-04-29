@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnMostrarPedidos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudPeso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDistancia)).BeginInit();
             this.SuspendLayout();
@@ -152,11 +153,22 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Distancia en km:";
             // 
+            // btnMostrarPedidos
+            // 
+            this.btnMostrarPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrarPedidos.Location = new System.Drawing.Point(198, 265);
+            this.btnMostrarPedidos.Name = "btnMostrarPedidos";
+            this.btnMostrarPedidos.Size = new System.Drawing.Size(160, 57);
+            this.btnMostrarPedidos.TabIndex = 12;
+            this.btnMostrarPedidos.Text = "MOSTRAR PEDIDOS";
+            this.btnMostrarPedidos.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 289);
+            this.ClientSize = new System.Drawing.Size(800, 362);
+            this.Controls.Add(this.btnMostrarPedidos);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -191,6 +203,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnMostrarPedidos;
     }
 }
 
